@@ -8,7 +8,7 @@ Created on Tue Nov 14 09:47:45 2017
 from scipy.spatial import distance
 import numpy as np
 import tensorflow as tf
-from keras.layers import Input, Dense, Reshape, Flatten, Dropout, MaxPooling2D, LSTM, GRU, Merge
+from keras.layers import Input, Dense, Reshape, Flatten, Dropout, MaxPooling2D, LSTM, GRU
 from keras.layers import BatchNormalization, Activation
 from keras.layers.advanced_activations import LeakyReLU
 from keras.layers.convolutional import UpSampling2D, Conv2D
@@ -23,6 +23,10 @@ from keras.layers.wrappers import TimeDistributed
 from keras import optimizers
 import time
 import cv2
+
+#we have to import utils
+import sys
+sys.path.append('/content/SS_plus')
 from ADI_utils import circle_group_model_input, log_group_model_input, group_model_input
 from ADI_utils import preprocess, get_traj_like, get_obs_pred_like, person_model_input, model_expected_ouput
 from keras.callbacks import History

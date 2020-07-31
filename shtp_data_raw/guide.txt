@@ -1,0 +1,8 @@
+In order to restore the data which are broken up into pieces, run this command to put together the pieces of the 
+compressed file:
+
+cat shtp_data_raw.tar.gz.parta* > shtp_data_raw.tar.gz
+
+then extract the newly made file with
+
+tar -xvf shtp_data_raw.tar.gz

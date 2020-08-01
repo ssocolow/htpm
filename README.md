@@ -1,4 +1,4 @@
-#htpm
+# htpm
 This is a project to develop a human trajectory prediction model/method.
 (shtp means standard human trajectory prediction)
 

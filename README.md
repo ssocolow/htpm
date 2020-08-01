@@ -1,5 +1,6 @@
-# SS_plus
-This is a project to develop a trajectory prediction model/method.
+#htpm
+This is a project to develop a human trajectory prediction model/method.
+(shtp means standard human trajectory prediction)
 
 ## Quick Start
 Here is a google collab file to explore: 

@@ -52,7 +52,7 @@ from occupancy import get_circle_occupancy_map, log_circle_occupancy_map
     ### SS-LSTM-related
 
 def preprocess(data_dir):
-    file_path = os.path.join(data_dir, 'pixel_pos.csv')
+    file_path = os.path.join(data_dir, 'pos_data.csv')
     data = np.genfromtxt(file_path, delimiter=',')
     numPeds = np.size(np.unique(data[1, :]))
 

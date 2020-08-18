@@ -1,5 +1,5 @@
 # htpm
-This is a project to develop a human trajectory prediction model/method.
+This is a project to develop a human trajectory prediction model/method.  Inspired by https://github.com/xuehaouwa/SS-LSTM
 (shtp means standard human trajectory prediction)
 
 ## Quick Start

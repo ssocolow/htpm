@@ -6,17 +6,17 @@ This is a project to develop a human trajectory prediction model/method.  Inspir
 Here is a google collab file to explore: 
 https://colab.research.google.com/drive/1HQgejgDW-bQ4lh8iklCOmB7Q8fzEEOVw?usp=sharing
 
-Or you can run it locally by running these commands:
-Download the files
-`git clone https://github.com/ssocolow/htpm.git`
-Go into the directory
-`cd htpm`
-Make the setup script executable
-`chmod +x setup.sh`
-Run the setup script
-`./setup.sh`
-Train the model
-`python3 ADI_model.py`
+Or you can run it locally by running these commands:  
+Download the files  
+`git clone https://github.com/ssocolow/htpm.git`  
+Go into the directory  
+`cd htpm`  
+Make the setup script executable  
+`chmod +x setup.sh`  
+Run the setup script  
+`./setup.sh`  
+Train the model  
+`python3 ADI_model.py`  
 
 ## Background
 These papers lead up to this work

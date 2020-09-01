@@ -14,7 +14,7 @@ Download the files
 Go into the directory  
 `cd htpm`  
   
-Make the setup script executable  
+Make the setup script executable (you may not have to do this step, do if the next step returns a permissions error)
 `chmod +x setup.sh`  
   
 Run the setup script  

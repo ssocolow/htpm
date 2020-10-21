@@ -109,11 +109,11 @@ opt = optimizers.RMSprop(lr=0.001)
 
 #!mv data-20200729T183623Z-001/ /
 ##########data processing###############
-data_dir_1 = './data-20200729T183623Z-001/data/ETHhotel/annotation'
-data_dir_2 = './data-20200729T183623Z-001/data/ETHuniv/annotation'
-data_dir_3 = './data-20200729T183623Z-001/data/UCYuniv/annotation'
-data_dir_4 = './data-20200729T183623Z-001/data/UCYzara01/annotation'
-data_dir_5 = './data-20200729T183623Z-001/data/UCYzara02/annotation'
+data_dir_1 = './data/ETHhotel/annotation'
+data_dir_2 = './data/ETHuniv/annotation'
+data_dir_3 = './data/UCYuniv/annotation'
+data_dir_4 = './data/UCYzara01/annotation'
+data_dir_5 = './data/UCYzara02/annotation'
 
 frame_dir_1 = './data/ETHhotel/frames/'
 frame_dir_2 = './data/ETHuniv/frames/'
@@ -133,9 +133,9 @@ data_str_5 = 'zara02-'
 # data_dir_1
 raw_data_1, numPeds_1 = preprocess(data_dir_1)
 
-obs_1 = np.load('./data-20200729T183623Z-001/data/ETHhotel/obs.npy')
-pred_1 = np.load('./data-20200729T183623Z-001/data/ETHhotel/pred.npy')
-img_1 = np.load('./data-20200729T183623Z-001/data/ETHhotel/img_data.npy')
+obs_1 = np.load('./data/ETHhotel/obs.npy')
+pred_1 = np.load('./data/ETHhotel/pred.npy')
+img_1 = np.load('./data/ETHhotel/img_data.npy')
 
 person_input_1 = person_model_input(obs_1, observed_frame_num)
 
@@ -148,9 +148,9 @@ group_circle_1 = circle_group_model_input(obs_1, observed_frame_num, neighborhoo
 
 # data_dir_2
 raw_data_2, numPeds_2 = preprocess(data_dir_2)
-obs_2 = np.load('./data-20200729T183623Z-001/data/ETHuniv/obs.npy')
-pred_2 = np.load('./data-20200729T183623Z-001/data/ETHuniv/pred.npy')
-img_2 = np.load('./data-20200729T183623Z-001/data/ETHuniv/img_data.npy')
+obs_2 = np.load('./data/ETHuniv/obs.npy')
+pred_2 = np.load('./data/ETHuniv/pred.npy')
+img_2 = np.load('./data/ETHuniv/img_data.npy')
 # img_2 = all_tensor(frame_dir_2, data_str_2, obs_2, 576, 720)
 person_input_2 = person_model_input(obs_2, observed_frame_num)
 expected_ouput_2 = model_expected_ouput(pred_2, predicting_frame_num)
@@ -162,9 +162,9 @@ group_circle_2 = circle_group_model_input(obs_2, observed_frame_num, neighborhoo
 
 # data_dir_3
 raw_data_3, numPeds_3 = preprocess(data_dir_3)
-obs_3 = np.load('./data-20200729T183623Z-001/data/UCYuniv/obs.npy')
-pred_3 = np.load('./data-20200729T183623Z-001/data/UCYuniv/pred.npy')
-img_3 = np.load('./data-20200729T183623Z-001/data/UCYuniv/img_data.npy')
+obs_3 = np.load('./data/UCYuniv/obs.npy')
+pred_3 = np.load('./data/UCYuniv/pred.npy')
+img_3 = np.load('./data/UCYuniv/img_data.npy')
 person_input_3 = person_model_input(obs_3, observed_frame_num)
 expected_ouput_3 = model_expected_ouput(pred_3, predicting_frame_num)
 group_log_3 = log_group_model_input(obs_3, observed_frame_num, neighborhood_size, dimensions_1, neighborhood_radius,
@@ -174,9 +174,9 @@ group_circle_3 = circle_group_model_input(obs_3, observed_frame_num, neighborhoo
                                           neighborhood_radius, grid_radius, grid_angle, circle_map_weights, raw_data_3)
 # data_dir_4
 raw_data_4, numPeds_4 = preprocess(data_dir_4)
-obs_4 = np.load('./data-20200729T183623Z-001/data/UCYzara01/obs.npy')
-pred_4 = np.load('./data-20200729T183623Z-001/data/UCYzara01/pred.npy')
-img_4 = np.load('./data-20200729T183623Z-001/data/UCYzara01/img_data.npy')
+obs_4 = np.load('./data/UCYzara01/obs.npy')
+pred_4 = np.load('./data/UCYzara01/pred.npy')
+img_4 = np.load('./data/UCYzara01/img_data.npy')
 person_input_4 = person_model_input(obs_4, observed_frame_num)
 expected_ouput_4 = model_expected_ouput(pred_4, predicting_frame_num)
 group_log_4 = log_group_model_input(obs_4, observed_frame_num, neighborhood_size, dimensions_1, neighborhood_radius,
@@ -187,9 +187,9 @@ group_circle_4 = circle_group_model_input(obs_4, observed_frame_num, neighborhoo
 
 # data_dir_5
 raw_data_5, numPeds_5 = preprocess(data_dir_5)
-obs_5 = np.load('./data-20200729T183623Z-001/data/UCYzara02/obs.npy')
-pred_5 = np.load('./data-20200729T183623Z-001/data/UCYzara02/pred.npy')
-img_5 = np.load('./data-20200729T183623Z-001/data/UCYzara02/img_data.npy')
+obs_5 = np.load('./data/UCYzara02/obs.npy')
+pred_5 = np.load('./data/UCYzara02/pred.npy')
+img_5 = np.load('./data/UCYzara02/img_data.npy')
 person_input_5 = person_model_input(obs_5, observed_frame_num)
 expected_ouput_5 = model_expected_ouput(pred_5, predicting_frame_num)
 group_log_5 = log_group_model_input(obs_5, observed_frame_num, neighborhood_size, dimensions_1, neighborhood_radius,

@@ -27,4 +27,4 @@ Train the model
 These papers lead up to this work
 https://docs.google.com/document/d/1kWWwZU0jlQkvf-aBQ3mmEMIbwEpNAbTCfJpj0H_DWvU/edit?usp=sharing  
 
-SS-LSTM paper by Hao Xue, Du Q. Huynh, and Mark Reynolds: https://www.researchgate.net/profile/Du_Huynh/publication/2269555_Self-Calibrating_a_Stereo_Head_An_Error_Analysis_in_the_Neighbourhood_of_Degenerate_Configurations/links/5c03ccb0a6fdcc1b8d502965/Self-Calibrating-a-Stereo-Head-An-Error-Analysis-in-the-Neighbourhood-of-Degenerate-Configurations.pdf
+"SS-LSTM: A Hierarchical LSTM Model for Pedestrian Trajectory Prediction" by Hao Xue, Du Q. Huynh, and Mark Reynolds: https://www.researchgate.net/profile/Du_Huynh/publication/2269555_Self-Calibrating_a_Stereo_Head_An_Error_Analysis_in_the_Neighbourhood_of_Degenerate_Configurations/links/5c03ccb0a6fdcc1b8d502965/Self-Calibrating-a-Stereo-Head-An-Error-Analysis-in-the-Neighbourhood-of-Degenerate-Configurations.pdf

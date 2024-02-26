@@ -1,6 +1,8 @@
 # htpm
 This is a project to develop a human trajectory prediction model/method.  Inspired by https://github.com/xuehaouwa/SS-LSTM
-(shtp means standard human trajectory prediction)
+(shtp means standard human trajectory prediction)  
+
+We would like to thank the [creators of the ETH dataset](https://ethz.ch/content/dam/ethz/special-interest/baug/igp/photogrammetry-remote-sensing-dam/documents/pdf/pellegrini09iccv.pdf) and the [creators of the UCY dataset](https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2007.01089.x).
 
 ## Quick Start
 Here is a google collab file to explore: 
